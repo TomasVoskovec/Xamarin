@@ -9,6 +9,10 @@ namespace Test
     {
         public App()
         {
+            #if DEBUG
+            LiveReload.Init();
+            #endif
+
             InitializeComponent();
 
             MainPage = new MainPage();
